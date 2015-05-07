@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView03"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:clickable="false"
+        android:fontFamily="Segoe UI Light (Headings)"
+        android:longClickable="false"
+        android:text="@string/cr"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:typeface="normal" />
+
+    <Button
+        android:id="@+id/signup1"
+        style="@style/AppTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView04"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="Segoe UI Light (Headings)"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="changelayout"
+        android:text="@string/signup" />
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/signup1"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:onClick="authenticate"
+        android:text="@string/signin" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@dimen/activity_horizontal_margin"
+        android:layout_alignEnd="@dimen/activity_vertical_margin"
+        android:layout_alignStart="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/Login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:clickable="false"
+        android:fontFamily="Segoe UI Light (Headings)"
+        android:longClickable="false"
+        android:text="@string/dnt"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:typeface="normal" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Login"
+        android:layout_alignEnd="@dimen/activity_vertical_margin"
+        android:layout_alignRight="@+id/TextView03"
+        android:layout_alignStart="@dimen/activity_horizontal_margin"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:clickable="false"
+        android:fontFamily="Segoe UI Light (Headings)"
+        android:longClickable="false"
+        android:text="@string/hve"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:typeface="normal" />
+
+</RelativeLayout>

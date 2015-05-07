@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    xmlns:android2="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <EditText
+        android2:id="@+id/msg"
+        android2:layout_width="wrap_content"
+        android2:layout_height="wrap_content"
+        android2:layout_above="@+id/send"
+        android2:layout_centerHorizontal="true"
+        android2:ems="10"
+        android2:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android2:id="@+id/msgs"
+        android2:layout_width="match_parent"
+        android2:layout_height="match_parent"
+        android2:layout_above="@+id/msg"
+        android2:layout_below="@+id/contacts"
+        android2:layout_centerHorizontal="true"
+        android2:layout_marginBottom="15dp"
+        android2:layout_marginLeft="10dp"
+        android2:layout_marginRight="10dp"
+        android2:layout_marginTop="32dp"
+        android2:focusable="false"
+        android2:focusableInTouchMode="false"
+        android2:gravity="top|left"
+        android2:scrollHorizontally="false"
+        android2:scrollbarStyle="insideOverlay"
+        android2:scrollbars="vertical"
+        android2:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android2:id="@+id/send"
+        android2:layout_width="wrap_content"
+        android2:layout_height="wrap_content"
+        android2:layout_alignParentBottom="true"
+        android2:layout_alignRight="@+id/msg"
+        android2:layout_marginBottom="20dp"
+        android2:text="@string/send" />
+
+    <Button
+        android2:id="@+id/ls"
+        android2:layout_width="wrap_content"
+        android2:layout_height="wrap_content"
+        android2:layout_alignBaseline="@+id/send"
+        android2:layout_alignBottom="@+id/send"
+        android2:layout_alignLeft="@+id/msg"
+        android2:text="@string/ls" />
+
+    <TextView
+        android2:id="@+id/contacts"
+        android2:layout_width="wrap_content"
+        android2:layout_height="wrap_content"
+        android2:layout_alignParentTop="true"
+        android2:layout_centerHorizontal="true"
+        android2:layout_marginTop="16dp"
+        android2:text="@string/hello_world" />
+
+</RelativeLayout>

@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".NewAccountActivity" >
+
+    <Button
+        android:id="@+id/signup2"
+        style="@style/AppTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="Segoe UI Light (Headings)"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="Register"
+        android:text="@string/signup" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/UserIdRegister"
+        android:layout_alignRight="@+id/signup2"
+        android:layout_below="@dimen/activity_horizontal_margin"
+        android:layout_centerHorizontal="true"
+        android:clickable="false"
+        android:fontFamily="Segoe UI Light (Headings)"
+        android:longClickable="false"
+        android:text="@string/userid"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:typeface="normal" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nameRegister"
+        android:layout_alignRight="@+id/TextView02"
+        android:layout_centerHorizontal="true"
+        android:clickable="false"
+        android:fontFamily="Segoe UI Light (Headings)"
+        android:longClickable="false"
+        android:text="@string/name"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:typeface="normal" />
+
+    <EditText
+        android:id="@+id/PasswordRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView03"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/nameRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Server_status"
+        android:layout_alignRight="@+id/PasswordRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="37dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/Server_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/PasswordRegister"
+        android:layout_centerHorizontal="true"
+        android:clickable="false"
+        android:fontFamily="Segoe UI Light (Headings)"
+        android:longClickable="false"
+        android:text="@string/pass"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:typeface="normal" />
+
+    <EditText
+        android:id="@+id/EmailRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/signup2"
+        android:layout_alignLeft="@+id/UserIdRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/EmailRegister"
+        android:layout_alignLeft="@+id/TextView01"
+        android:layout_centerHorizontal="true"
+        android:clickable="false"
+        android:fontFamily="Segoe UI Light (Headings)"
+        android:longClickable="false"
+        android:text="@string/mail"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:typeface="normal" />
+
+    <EditText
+        android:id="@+id/UserIdRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView01"
+        android:layout_alignRight="@+id/PasswordRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:inputType="text" >
+
+        <requestFocus />
+        <requestFocus />
+
+    </EditText>
+
+</RelativeLayout>

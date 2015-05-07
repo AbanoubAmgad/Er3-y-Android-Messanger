@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <ListView
+        android1:id="@+id/contactlist"
+        android1:layout_width="match_parent"
+        android1:layout_height="match_parent"
+        android1:layout_above="@+id/Signout"
+        android1:layout_alignParentLeft="true"
+        android1:layout_below="@+id/contacts"
+        android1:layout_marginBottom="10dp"
+        android1:layout_marginLeft="15dp"
+        android1:layout_marginRight="15dp"
+        android1:layout_marginTop="10dp" >
+
+    </ListView>
+
+    <TextView
+        android1:id="@+id/contacts"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentTop="true"
+        android1:layout_centerHorizontal="true"
+        android1:layout_marginTop="14dp"
+        android1:text="@string/cs" />
+
+    <Button
+        android1:id="@+id/addContact"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentBottom="true"
+        android1:layout_alignRight="@+id/contactlist"
+        android1:layout_marginBottom="24dp"
+        android1:text="@string/adcntc" />
+
+    <Button
+        android1:id="@+id/Signout"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignBaseline="@+id/addContact"
+        android1:layout_alignBottom="@+id/addContact"
+        android1:layout_alignLeft="@+id/contactlist"
+        android1:text="@string/sot" />
+
+    <Button
+        android1:id="@+id/refresh"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentTop="true"
+        android1:layout_alignRight="@+id/contactlist"
+        android1:text="@string/ref" />
+
+</RelativeLayout>
